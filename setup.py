@@ -22,7 +22,8 @@ setup(
     version='0.0.1',
     author='sakshi kumari',
     author_email='singhsakshi3498@gmail.com',
-    # 🎯 FIX IS HERE: Tell find_packages() to look inside 'src'
+    # 🎯 FINAL FIX: Explicitly tell setuptools where the 'mlproject' package lives 
+    # and map the 'mlproject' package name to the 'src' directory content.
     packages=find_packages(where='src'), 
     install_requires=get_requirements('requirements.txt')
 )
